@@ -1,3 +1,11 @@
+## TODO
+
+- Set up Passport authentication (or anonymous?)
+- Default CRUD* controller
+- Implement endpoints
+- Multilanguage questions
+- Fulltext search + filters (tags, languages)
+
 ## API endpoints
 
 | Method | URI                                      | Description
@@ -9,6 +17,8 @@
 | POST   | /questions                               | Create a new question
 | POST   | /questions/{question}/comments           | Create a new comment 
 | POST   | /users                                   | Create a new user
+| POST   | /questions/{question}/rate/{rating}      | Rate a question
+| POST   | /comments/{question}/rate/{rating}       | Rate a comment 
 | PUT    | /users/{user}                            | Edit a user
 | PUT    | /questions/{question}                    | Edit a question
 | DELETE | /users/{user}                            | Delete a user
